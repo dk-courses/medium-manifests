@@ -1,12 +1,12 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: fluxcd-demo
-  namespace: default
+  name: fluxcd-release
+  namespace: fluxcd-demo
   annotations:
     fluxcd.io/automated: "true"
 spec:
-  releaseName: fluxcd-demo
+  releaseName: fluxcd-release
   targetNamespace: fluxcd-demo
   chart:
     git: git@github.com:dk-courses/medium-manifests.git
